@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LocalAssist (Hackathon MVP)",
+  "version": "0.1.0",
+  "description": "A privacy-first AI communication hub for the Google AI Challenge.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://app.slack.com/*",
+    "https://web.whatsapp.com/*"
+  ],
+  "action": {
+    "default_title": "Open LocalAssist"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  }
+}
